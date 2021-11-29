@@ -55,3 +55,9 @@ body {
   background: #62baea;
   color: #fff;
 }
+
+.dropdown .option div ion-icon {
+  position: relative;
+  top: 4px;
+  font-size: 1.2em;
+}
