@@ -37,6 +37,11 @@ body {
   pointer-events: none;
 }
 
+.dropdown.active::before {
+  top: 22px;
+  transform: rotate(-225deg);
+}
+
 .dropdown input {
   position: absolute;
   top: 0;
@@ -60,7 +65,11 @@ body {
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   overflow: hidden;
-  // display: none;
+  display: none;
+}
+
+.dropdown.active .option {
+  display: block;
 }
 
 .dropdown .option div {
